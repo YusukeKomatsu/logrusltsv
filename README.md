@@ -15,5 +15,5 @@ log.WithFields(logrus.Fields{"foo": "bar", "fiz": feez}).Info("test")
 Such an example might produce a log record like this:
 
 ``` go
-time:2015-03-23T11:37:13+09:00  level:info  msg:test  foo:bar  fiz:feez
+time:2015-03-23 11:37:13  level:info  msg:test  foo:bar  fiz:feez
 ```
