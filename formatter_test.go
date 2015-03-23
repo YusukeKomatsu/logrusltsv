@@ -46,7 +46,7 @@ func TestFormatter(t *testing.T) {
 	assert.NoError(err)
 	assert.Equal(
 		strings.Join([]string{
-			`time:2015-01-30T16:01:47+09:00`,
+			`time:2015-01-30 16:01:47`,
 			`level:error`,
 			`msg:test\a message\n`,
 			`app:test`,

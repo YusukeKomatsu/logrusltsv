@@ -18,7 +18,7 @@ type (
 
 func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 	commonItems := [][2]string{
-		{"time", entry.Time.Format(time.RFC3339)},
+		{"time", entry.Time.Format("2006-01-02 15:04:05")},
 		{"level", entry.Level.String()},
 		{"msg", escape(entry.Message)},
 	}
